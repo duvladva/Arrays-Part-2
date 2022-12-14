@@ -26,7 +26,7 @@ public class Main {
         System.out.println("Модель бухгалтерской книги - массив случайных чисел: ");
         System.out.println(Arrays.toString(arr));
         int totalCosts = 0;
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             totalCosts+=arr[i];}
         System.out.println("Сумма всех трат за месяц равна: "+totalCosts);
         }
@@ -37,10 +37,10 @@ public class Main {
         System.out.println(Arrays.toString(arr));
         int minCost = 200_000;
         int maxCost = 100_000;
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if(arr[i]<minCost){minCost=arr[i];}
         }
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if(arr[i]>maxCost){maxCost=arr[i];}
         }
         System.out.println("Минимальная сумма трат за день составила "+minCost+" рублей");
@@ -51,8 +51,8 @@ public class Main {
         int[] arr = generateRandomArray();
         System.out.println("Модель бухгалтерской книги - массив случайных чисел: ");
         System.out.println(Arrays.toString(arr));
-        int totalCosts = 0;
-        for (int i = 0; i < arr.length-1; i++) {
+        double totalCosts = 0;
+        for (int i = 0; i < arr.length; i++) {
             totalCosts+=arr[i];}
         double averageCostAtDay = totalCosts / arr.length;
         System.out.println("Средняя сумма трат за месяц составила "+averageCostAtDay+" рублей.");
